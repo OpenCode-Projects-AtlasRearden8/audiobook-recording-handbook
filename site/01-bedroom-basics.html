@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bedroom Recording Basics: Blankets Beat Gear — The Audiobook Recording Handbook</title>
+<meta name="description" content="A warm, plain-English handbook for recording your own audiobook at home: bedroom acoustics, free Audacity setup, store specs in plain numbers, reading tips for non-voice-actors, a chapter-by-chapter workflow, and honest narration options.">
+<style>
+:root {
+  --ink: #23201a;
+  --paper: #fdfbf7;
+  --accent: #7c3f2d;
+  --accent-soft: #f3e6df;
+  --line: #e4dcd2;
+  --muted: #6f675c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 18px;
+}
+.wrap { max-width: 46em; margin: 0 auto; padding: 1.2rem 1.2rem 4rem; }
+header.site {
+  border-bottom: 3px double var(--line);
+  padding: 1.3rem 0 1rem;
+  margin-bottom: 1rem;
+}
+header.site h1 { margin: 0 0 .2rem; font-size: 1.45rem; }
+header.site h1 a { color: var(--accent); text-decoration: none; }
+header.site p.tag { margin: 0; color: var(--muted); font-style: italic; }
+nav.toc {
+  background: var(--accent-soft);
+  border-radius: 8px;
+  padding: .9rem 1.1rem;
+  margin: 1.3rem 0 1.8rem;
+  font-size: .95rem;
+}
+nav.toc ol { margin: .2rem 0 .2rem 1.2rem; padding: 0; }
+nav.toc li { margin: .15rem 0; }
+nav.toc a { color: var(--ink); text-decoration: none; }
+nav.toc a:hover { text-decoration: underline; }
+nav.pagers {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 2.4rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  font-size: .95rem;
+}
+nav.pagers a { color: var(--accent); text-decoration: none; font-weight: bold; }
+nav.pagers a:hover { text-decoration: underline; }
+h2 { border-bottom: 1px solid var(--line); padding-bottom: .25rem; }
+h3 { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1.1rem 0; font-size: .92em; }
+th, td { border: 1px solid var(--line); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+code {
+  background: var(--accent-soft);
+  padding: .05em .35em;
+  border-radius: 4px;
+  font-size: .9em;
+  font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+}
+pre {
+  background: #2d2a24;
+  color: #f6f1e7;
+  padding: .9rem 1.1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.45;
+  font-size: .9em;
+}
+pre code { background: none; color: inherit; padding: 0; }
+blockquote {
+  margin: 1.2rem 0;
+  padding: .2rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 8px 8px 0;
+}
+ul, ol, p { margin: .8rem 0; }
+li { margin: .3rem 0; }
+footer.site {
+  margin-top: 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .85rem;
+}
+.meta { color: var(--muted); font-size: .85rem; margin: -.3rem 0 1.4rem; }
+input[type="checkbox"] { accent-color: var(--accent); }
+@media (max-width: 700px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1><a href="index.html">The Audiobook Recording Handbook</a></h1>
+<p class="tag">Record your own audiobook at home — blankets beat gear</p>
+</header>
+<p class='meta'>01-bedroom-basics.md · 1,105 words · about 5 min to read</p><nav class='toc'><p><strong>In this handbook</strong></p><ol><li><a href="00-intro.html">Introduction: Your Audiobook, Made at Home</a></li><li><strong>Bedroom Recording Basics: Blankets Beat Gear</strong></li><li><a href="02-free-audacity-setup.html">Free Audacity Setup: Five Minutes, No Money, No Tears</a></li><li><a href="03-acx-specs.html">ACX-Style Specs in Plain Numbers</a></li><li><a href="04-reading-tips.html">Reading Tips for Non-Voice-Actors</a></li><li><a href="05-chapter-workflow.html">The Chapter-by-Chapter Workflow</a></li><li><a href="06-narration-options.html">Your Three Narration Routes: DIY, Hire, or AI</a></li><li><a href="07-listening-and-publishing.html">Listening, Distributing, and After You Finish</a></li><li><a href="08-checklists.html">Checklists</a></li><li><a href="09-glossary.html">Glossary</a></li></ol></nav><h1 id="bedroom-recording-basics-blankets-beat-gear">Bedroom Recording Basics: Blankets Beat Gear</h1>
+<p>Here is the single most important line in this whole handbook:</p>
+<p><strong>Your room matters more than your microphone.</strong></p>
+<p>A $100 mic in a good room sounds better than a $500 mic in a bad room. And the best part of that news: making a room "good enough" costs almost nothing. You do it with blankets, pillows, and furniture you already own.</p>
+<h2 id="why-rooms-ruin-recordings">Why rooms ruin recordings</h2>
+<p>When your voice leaves your mouth, two things happen:</p>
+<ol>
+<li>A little bit of it travels straight to the microphone. This is the part you want to record.</li>
+<li>A lot of it bounces off your walls, ceiling, and desk. This "reflected" sound arrives at the mic a few milliseconds later, smeared and soupy.</li>
+</ol>
+<p>Microphones are dumb. They record everything. In an untreated bedroom, this reflected sound is what people mean when they say a recording sounds "boomy", "echo-y", "boxy", or (in the technical jargon) has too much <strong>reverb</strong> and <strong>early reflections</strong>.</p>
+<p>Professional studios use soft, uneven, sound-absorbing surfaces to soak up reflections before they hit the mic. You will do the same with clothes, blankets, and clever furniture arrangement — at roughly 1% of the cost.</p>
+<h2 id="the-15minute-blanket-booth">The 15-minute blanket booth</h2>
+<p>You don't need to treat a whole room. You need to treat the space <strong>two to three feet in front of, behind, and around your microphone</strong>. Think of it as building a small soft cave for the mic and your face.</p>
+<p>Pick a recording spot with these characteristics:</p>
+<ul>
+<li>Around a corner or into a closet, not facing a bare wall head-on</li>
+<li>Away from anything that hums (computers with fans, fridges, AC units, aquariums, ceiling fans)</li>
+<li>Away from windows facing traffic; a closed window's soft curtains are actually fine acoustically, but outdoor noise comes through easily</li>
+</ul>
+<p>Then build the booth:</p>
+<ol>
+<li><strong>Face away from open space.</strong> Put a heavy blanket, duvet, or several bath towels over a chair, lamp, or ironing board behind and beside your mic. Sound that goes <em>past</em> the mic comes from behind you — this is the reflection that matters most.</li>
+<li><strong>Deal with the desk.</strong> Bare desks bounce sound right back up into your mic. Drape a folded blanket over the front edge of the desk, or tilt the mic down and speak over the desk, not across it.</li>
+<li><strong>Use a closet if you can.</strong> A closet full of hanging clothes is a genuinely professional-grade absorber. Sit facing into the closet door, mic between you and the clothes. Many successful indie audiobooks were recorded entirely inside a bedroom closet.</li>
+<li><strong>Soften, don't seal.</strong> Leave your door and windows closed but you don't need airtight. Airflow is fine. You're killing <em>reflections</em>, not oxygen.</li>
+</ol>
+<blockquote><p><strong>Test your booth in 10 seconds:</strong> clap once, loudly, in your recording position. If you hear a metallic <em>twang</em> or a ringing tail, you have big bare surfaces nearby — move more blankets in. Aim for a dead, soft, slightly muffled clap.</p></blockquote>
+<h2 id="killing-the-hum-the-noise-audit">Killing the hum: the noise audit</h2>
+<p>Reverb is the #1 room problem. Background noise is #2. These are the usual suspects, in order of how often they ruin takes:</p>
+<table>
+<thead><tr>
+<th>Suspect</th>
+<th>What it sounds like</th>
+<th>Fix</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Refrigerator/compressor hum</td>
+<td>Constant low bass drone</td>
+<td>Record in a room away from the kitchen; or unplug it for short sessions and plug it back in after</td>
+</tr>
+<tr>
+<td>Computer fans</td>
+<td>Mid-range whoosh</td>
+<td>Move the tower onto the floor, away from mic; use a laptop with a quieter profile; or record with mic far from the PC</td>
+</tr>
+<tr>
+<td>Air conditioning / heating</td>
+<td>Broad hiss or rumble</td>
+<td>Turn it off during takes; between takes, turn it back on (short sessions)</td>
+</tr>
+<tr>
+<td>Ceiling fans</td>
+<td>Thwup... thwup...</td>
+<td>Turn them off</td>
+</tr>
+<tr>
+<td>Outside traffic</td>
+<td>Random wooshes, horns</td>
+<td>Closet-corner booth; record early morning; blankets over the window too</td>
+</tr>
+<tr>
+<td>Fridge ice maker, dishwasher</td>
+<td>Rattles and gurgles</td>
+<td>Same as fridge</td>
+</tr>
+<tr>
+<td>Neighbors, pets, kids</td>
+<td>Life happening</td>
+<td>Record when the house is at its quietest (often 6–8 AM)</td>
+</tr>
+</tbody></table>
+<p>Run this audit <strong>once, properly, and record the answer</strong>: sit silently in your booth for 30 seconds, headphones on, and just listen at full volume. Everything you hear at "full risk volume" will be audible in your recording. Fix what you can; schedule around what you can't.</p>
+<h2 id="the-mic-itself-the-short-honest-version">The mic itself (the short honest version)</h2>
+<p>You need exactly one microphone, and it does not need to be expensive.</p>
+<ul>
+<li><strong>USB microphone</strong> (plugs straight into your computer): the simplest path. Well-known beginner-friendly models in the $40–$100 range (e.g., a Samson Q2U, Audio-Technica ATR2100x, or a budget dynamic USB mic) are more than good enough to pass audiobook specs.</li>
+<li><strong>Dynamic mics</strong> (most USB mics are these) are actually <em>better</em> than the famous big-diaphragm condensers for untreated rooms, because they hear less of your room's mess. The "pro studio" condenser microphones you see on YouTube assume a treated room you don't have. This is another case of blankets beating gear.</li>
+<li><strong>Distance matters more than price.</strong> Put the mic 2–4 inches (5–10 cm) from your mouth. Use a foam windscreen or sock/pop filter to stop "P" and "B" pops. Every inch further away, you add room sound and lose voice — close and warm wins.</li>
+<li><strong>A headphone you already own</strong> is fine for monitoring. Closed headphones are best (so you hear what's recorded, not what's live).</li>
+</ul>
+<p>Total realistic gear budget: <strong>$40–$120.</strong> If you already own any USB mic — even a cheap headset — start with it and upgrade only if Chapter 3's measurements say you must.</p>
+<h2 id="physical-recording-posture">Physical recording posture</h2>
+<p>Small habits with big payoff:</p>
+<ul>
+<li>Sit up straight or stand. Slumping compresses your lungs and your voice.</li>
+<li>Keep the mic slightly off-axis (talk <em>across</em> it, not directly <em>into</em> it) to tame plosives.</li>
+<li>Drink room-temperature water before and during sessions. Ice tightens your throat; dairy coats it.</li>
+<li>Keep a water bottle and a sip glass at arm's reach — leaving the booth mid-paragraph costs you momentum.</li>
+<li>Keep cough drops, tissues, and lip balm nearby. Little frictions add up over 90-minute sessions.</li>
+</ul>
+<h2 id="what-good-enough-really-means">What "good enough" really means</h2>
+<p>You are not building a Grammy studio. You are building a space where:</p>
+<ol>
+<li>The room adds <strong>less noise than the mic itself</strong> (mic self-noise is your real floor — usually around -60 dB).</li>
+<li>A silent 30-second recording, played back loud, sounds like <em>nothing</em> — no hum, no hiss, no tail on your claps.</li>
+</ol>
+<p>If you hit those two things, your room is done. Everything after this is just the microphone, the software, and your voice — and Chapters 2–4 of this handbook cover those in friendly detail.</p>
+<p>One last encouragement: your booth will not be pretty. It will look like a blanket fort made by a determined adult. Professional results from absurd looking furniture towers are one of the great joys of DIY audio. Lean into it.</p><nav class='pagers'><a href="00-intro.html">&larr; Introduction: Your Audiobook, Made at Home</a><a href="02-free-audacity-setup.html">Free Audacity Setup: Five Minutes, No Money, No Tears &rarr;</a></nav>
+<footer class="site">
+<p>01-bedroom-basics.md · 1,105 words · about 5 min to read</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC · <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a> · MIT licensed. Written plain, warm, and checked like you would if a friend asked you to test it.</p>
+</footer>
+</div>
+</body>
+</html>

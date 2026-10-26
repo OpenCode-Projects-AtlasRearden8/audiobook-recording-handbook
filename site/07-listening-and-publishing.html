@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Listening, Distributing, and After You Finish — The Audiobook Recording Handbook</title>
+<meta name="description" content="A warm, plain-English handbook for recording your own audiobook at home: bedroom acoustics, free Audacity setup, store specs in plain numbers, reading tips for non-voice-actors, a chapter-by-chapter workflow, and honest narration options.">
+<style>
+:root {
+  --ink: #23201a;
+  --paper: #fdfbf7;
+  --accent: #7c3f2d;
+  --accent-soft: #f3e6df;
+  --line: #e4dcd2;
+  --muted: #6f675c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 18px;
+}
+.wrap { max-width: 46em; margin: 0 auto; padding: 1.2rem 1.2rem 4rem; }
+header.site {
+  border-bottom: 3px double var(--line);
+  padding: 1.3rem 0 1rem;
+  margin-bottom: 1rem;
+}
+header.site h1 { margin: 0 0 .2rem; font-size: 1.45rem; }
+header.site h1 a { color: var(--accent); text-decoration: none; }
+header.site p.tag { margin: 0; color: var(--muted); font-style: italic; }
+nav.toc {
+  background: var(--accent-soft);
+  border-radius: 8px;
+  padding: .9rem 1.1rem;
+  margin: 1.3rem 0 1.8rem;
+  font-size: .95rem;
+}
+nav.toc ol { margin: .2rem 0 .2rem 1.2rem; padding: 0; }
+nav.toc li { margin: .15rem 0; }
+nav.toc a { color: var(--ink); text-decoration: none; }
+nav.toc a:hover { text-decoration: underline; }
+nav.pagers {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 2.4rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  font-size: .95rem;
+}
+nav.pagers a { color: var(--accent); text-decoration: none; font-weight: bold; }
+nav.pagers a:hover { text-decoration: underline; }
+h2 { border-bottom: 1px solid var(--line); padding-bottom: .25rem; }
+h3 { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1.1rem 0; font-size: .92em; }
+th, td { border: 1px solid var(--line); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+code {
+  background: var(--accent-soft);
+  padding: .05em .35em;
+  border-radius: 4px;
+  font-size: .9em;
+  font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+}
+pre {
+  background: #2d2a24;
+  color: #f6f1e7;
+  padding: .9rem 1.1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.45;
+  font-size: .9em;
+}
+pre code { background: none; color: inherit; padding: 0; }
+blockquote {
+  margin: 1.2rem 0;
+  padding: .2rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 8px 8px 0;
+}
+ul, ol, p { margin: .8rem 0; }
+li { margin: .3rem 0; }
+footer.site {
+  margin-top: 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .85rem;
+}
+.meta { color: var(--muted); font-size: .85rem; margin: -.3rem 0 1.4rem; }
+input[type="checkbox"] { accent-color: var(--accent); }
+@media (max-width: 700px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1><a href="index.html">The Audiobook Recording Handbook</a></h1>
+<p class="tag">Record your own audiobook at home — blankets beat gear</p>
+</header>
+<p class='meta'>07-listening-and-publishing.md · 812 words · about 4 min to read</p><nav class='toc'><p><strong>In this handbook</strong></p><ol><li><a href="00-intro.html">Introduction: Your Audiobook, Made at Home</a></li><li><a href="01-bedroom-basics.html">Bedroom Recording Basics: Blankets Beat Gear</a></li><li><a href="02-free-audacity-setup.html">Free Audacity Setup: Five Minutes, No Money, No Tears</a></li><li><a href="03-acx-specs.html">ACX-Style Specs in Plain Numbers</a></li><li><a href="04-reading-tips.html">Reading Tips for Non-Voice-Actors</a></li><li><a href="05-chapter-workflow.html">The Chapter-by-Chapter Workflow</a></li><li><a href="06-narration-options.html">Your Three Narration Routes: DIY, Hire, or AI</a></li><li><strong>Listening, Distributing, and After You Finish</strong></li><li><a href="08-checklists.html">Checklists</a></li><li><a href="09-glossary.html">Glossary</a></li></ol></nav><h1 id="listening-distributing-and-after-you-finish">Listening, Distributing, and After You Finish</h1>
+<p>You have a folder full of spec-perfect MP3s. Congratulations — the hard part is done. This short chapter covers what's next: final quality checking, where to sell, and a note about the store landscape.</p>
+<h2 id="the-final-listen-one-evening-well-spent">The final listen (one evening, well spent)</h2>
+<p>Before uploading anywhere, do one full "listener pass":</p>
+<ul>
+<li>Export all MP3s into one folder, put them in a phone or computer player, and listen <strong>in order, at normal speed</strong> (1x — no skipping).</li>
+<li>You're checking for <em>continuity problems</em>: a jump in loudness between sessions (should be fixed by mastering — verify it actually was), pacing drift, a leftover "sorry", a chapter that starts too abruptly.</li>
+<li>Mark timestamps (photo of notes works). Good news: most little problems are best fixed by a single 20-minute pickup session per chapter, not a chapter re-record.</li>
+<li>Bonus clues to listen for: consistent mouth clicks on certain words (add a green apple to the ritual), and one "recording day" that sounds different from the rest (usually a mic-distance or posture drift — a lesson to note for next time, not necessarily a re-record).</li>
+</ul>
+<h2 id="where-audiobooks-are-sold-2026-snapshot">Where audiobooks are sold (2026 snapshot)</h2>
+<p>The store landscape has consolidated a lot and continues to shift. Here's the honest shape of it for indie authors:</p>
+<table>
+<thead><tr>
+<th>Store / program</th>
+<th>How indies get in</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Amazon/Audible (ACX)</strong></td>
+<td>Direct upload at acx.com, or via an audiobook distributor</td>
+<td>The dominant market. Strict specs (Chapter 3). Exclusive (Audible-only) contracts get you a bigger royalty pool; non-exclusive plans exist too</td>
+</tr>
+<tr>
+<td><strong>Spotify</strong></td>
+<td>Normally through an audiobook distributor; direct-in options have come and gone as Spotify's audiobook programs evolve</td>
+<td>Spotify's audiobook offering is huge with listeners now; distribution models rotate, check current docs</td>
+</tr>
+<tr>
+<td><strong>Apple Books</strong></td>
+<td>Through distributors, or (in a limited set of cases) direct via Apple's tooling</td>
+<td>Second most recognized marketplace</td>
+</tr>
+<tr>
+<td><strong>Google Play Books</strong></td>
+<td>Direct via Partner Center (supports auto-narration; Chapter 6)</td>
+<td>The most AI-friendly major store</td>
+</tr>
+</tbody></table>
+<p>Two honest structural notes:</p>
+<ol>
+<li><strong>ACX acceptance is its own bar.</strong> The Audible-side checker runs a fully automated pass when you upload. If your files follow Chapter 3 exactly, they sail through in most cases. When they fail, the error email names the file and the measurement — usually room tone or sample rate. Fix and re-upload; nothing is lost.</li>
+<li><strong>Wide distribution goes through aggregators.</strong> One distributor account (audiobook-focused aggregators like Findaway's branches, Draft2Digital's audiobook side, or paid per-title services) pushes your files to Spotify/Apple/Google and others all at once. Fees and cuts vary by service and by year. Do your own quick comparison before you commit.</li>
+</ol>
+<blockquote><p>Our companion guide, <em>Publishing Beyond KDP</em>, covers the distribution ecosystem in depth. This handbook gives you files any distributor will happily accept.</p></blockquote>
+<h2 id="pricing-one-paragraph-honestly">Pricing (one paragraph, honestly)</h2>
+<p>Audiobook pricing is set more rigidly than ebook pricing: major programs want credit/listener models to hold, so "your price" is often a suggestion to a credit system at popular stores. For self-narrated nonfiction, $12.99–$21.99 list price is the common band for decent-length books, and you're often paid on sale price, not list, in some plans. Price it once, don't fuss — marketing for audiobooks is mostly about getting the <em>first</em> listen, not the tenth.</p>
+<h2 id="launch-checklist-happy-path">Launch checklist (happy path)</h2>
+<ol>
+<li>All MP3s spec-check clean (Chapter 3 checklist run).</li>
+<li>One full listener pass done.</li>
+<li>Book cover exists at required store sizes (distributor pages tell you; 1600×1600 minimum is common for audiobooks).</li>
+<li>Book description written for <em>ears</em> — narrate it mentally; the audiobook store shows it in text, but your cover/description is the same persuasive job it was for the printed version.</li>
+<li>Accounts: eBooks/eBook distributor + audiobook store accounts ready.</li>
+<li>Metadata (title, series, narrator name = your name, ISBN decisions) decided once and reused identically everywhere.</li>
+</ol>
+<h2 id="back-matter-and-preorder-the-small-wins">Back matter and pre-order (the small wins)</h2>
+<ul>
+<li>Consider releasing the audiobook as a <strong>pre-order</strong> with a stated date once the book is genuinely close. A pre-order window (even a two-week one) is free visibility in store-new-release grids.</li>
+<li>If you DIY-narrated, put <strong>"Read by the author"</strong> in the metadata; it's a genuine selling point and the store fields explicitly ask.</li>
+<li>Keep your master WAVs (<code>masters/</code> folder from Chapter 5) forever. Every future distributor or voice change will ask for them.</li>
+</ul>
+<h2 id="what-to-do-with-a-life-after-finishing">What to do with a life after finishing</h2>
+<p>Stats worth knowing (and calming): most audiobook sales for a mid-list title arrive over <em>years</em>, not weeks. The finish line here is "the book is for sale everywhere it can be". After that:</p>
+<ul>
+<li>If sales come and listeners ask for more: your next book's audiobook is now 40% faster to produce. Plan on it.</li>
+<li>If you hired or used auto-narration and a DIY version suddenly makes sense later: nothing from this handbook expires except the store-page screenshots.</li>
+<li>If this was your trial run and the format isn't clicking at one store yet: audiobooks are a long shelf. Leave the book up; costs are zero after mastering.</li>
+</ul>
+<p>You did the thing. Sleep well.</p><nav class='pagers'><a href="06-narration-options.html">&larr; Your Three Narration Routes: DIY, Hire, or AI</a><a href="08-checklists.html">Checklists &rarr;</a></nav>
+<footer class="site">
+<p>07-listening-and-publishing.md · 812 words · about 4 min to read</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC · <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a> · MIT licensed. Written plain, warm, and checked like you would if a friend asked you to test it.</p>
+</footer>
+</div>
+</body>
+</html>

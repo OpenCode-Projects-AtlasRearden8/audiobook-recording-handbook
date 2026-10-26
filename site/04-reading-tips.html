@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading Tips for Non-Voice-Actors — The Audiobook Recording Handbook</title>
+<meta name="description" content="A warm, plain-English handbook for recording your own audiobook at home: bedroom acoustics, free Audacity setup, store specs in plain numbers, reading tips for non-voice-actors, a chapter-by-chapter workflow, and honest narration options.">
+<style>
+:root {
+  --ink: #23201a;
+  --paper: #fdfbf7;
+  --accent: #7c3f2d;
+  --accent-soft: #f3e6df;
+  --line: #e4dcd2;
+  --muted: #6f675c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 18px;
+}
+.wrap { max-width: 46em; margin: 0 auto; padding: 1.2rem 1.2rem 4rem; }
+header.site {
+  border-bottom: 3px double var(--line);
+  padding: 1.3rem 0 1rem;
+  margin-bottom: 1rem;
+}
+header.site h1 { margin: 0 0 .2rem; font-size: 1.45rem; }
+header.site h1 a { color: var(--accent); text-decoration: none; }
+header.site p.tag { margin: 0; color: var(--muted); font-style: italic; }
+nav.toc {
+  background: var(--accent-soft);
+  border-radius: 8px;
+  padding: .9rem 1.1rem;
+  margin: 1.3rem 0 1.8rem;
+  font-size: .95rem;
+}
+nav.toc ol { margin: .2rem 0 .2rem 1.2rem; padding: 0; }
+nav.toc li { margin: .15rem 0; }
+nav.toc a { color: var(--ink); text-decoration: none; }
+nav.toc a:hover { text-decoration: underline; }
+nav.pagers {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 2.4rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  font-size: .95rem;
+}
+nav.pagers a { color: var(--accent); text-decoration: none; font-weight: bold; }
+nav.pagers a:hover { text-decoration: underline; }
+h2 { border-bottom: 1px solid var(--line); padding-bottom: .25rem; }
+h3 { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1.1rem 0; font-size: .92em; }
+th, td { border: 1px solid var(--line); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+code {
+  background: var(--accent-soft);
+  padding: .05em .35em;
+  border-radius: 4px;
+  font-size: .9em;
+  font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+}
+pre {
+  background: #2d2a24;
+  color: #f6f1e7;
+  padding: .9rem 1.1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.45;
+  font-size: .9em;
+}
+pre code { background: none; color: inherit; padding: 0; }
+blockquote {
+  margin: 1.2rem 0;
+  padding: .2rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 8px 8px 0;
+}
+ul, ol, p { margin: .8rem 0; }
+li { margin: .3rem 0; }
+footer.site {
+  margin-top: 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .85rem;
+}
+.meta { color: var(--muted); font-size: .85rem; margin: -.3rem 0 1.4rem; }
+input[type="checkbox"] { accent-color: var(--accent); }
+@media (max-width: 700px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1><a href="index.html">The Audiobook Recording Handbook</a></h1>
+<p class="tag">Record your own audiobook at home — blankets beat gear</p>
+</header>
+<p class='meta'>04-reading-tips.md · 939 words · about 4 min to read</p><nav class='toc'><p><strong>In this handbook</strong></p><ol><li><a href="00-intro.html">Introduction: Your Audiobook, Made at Home</a></li><li><a href="01-bedroom-basics.html">Bedroom Recording Basics: Blankets Beat Gear</a></li><li><a href="02-free-audacity-setup.html">Free Audacity Setup: Five Minutes, No Money, No Tears</a></li><li><a href="03-acx-specs.html">ACX-Style Specs in Plain Numbers</a></li><li><strong>Reading Tips for Non-Voice-Actors</strong></li><li><a href="05-chapter-workflow.html">The Chapter-by-Chapter Workflow</a></li><li><a href="06-narration-options.html">Your Three Narration Routes: DIY, Hire, or AI</a></li><li><a href="07-listening-and-publishing.html">Listening, Distributing, and After You Finish</a></li><li><a href="08-checklists.html">Checklists</a></li><li><a href="09-glossary.html">Glossary</a></li></ol></nav><h1 id="reading-tips-for-nonvoiceactors">Reading Tips for Non-Voice-Actors</h1>
+<p>You are not a voice actor. Good news: <strong>you don't have to be.</strong> Listeners do not expect a Broadway performance from a self-narrated book. They expect a warm, clear voice reading words the author clearly cares about — and that's something you can do from day one.</p>
+<p>The trick is not "sounding like a narrator." The trick is <strong>sounding like a person who is talking to one friend</strong>.</p>
+<h2 id="the-onefriend-rule">The one-friend rule</h2>
+<p>Imagine one specific person — a friend who would love your book — and read <em>to them</em>, not into the room. Do this literally: put a photo of a friend near the mic, or hang a sticky note with their name on the blanket fort. Everything else in this chapter is downstream of this.</p>
+<p>Practical framing:</p>
+<ul>
+<li>Talk <strong>slightly slower than conversation</strong>, not "narrator slow".</li>
+<li>Speak at <strong>90% of your conversational volume</strong> — energy without strain.</li>
+<li>Let sentences land. Don't rush the end of a sentence to get to the next one.</li>
+</ul>
+<h2 id="breathing-the-forgotten-foundation">Breathing: the forgotten foundation</h2>
+<ul>
+<li>Breathe from your belly. Your shoulders should stay still.</li>
+<li><strong>Breathe <em>before</em> thinking, not mid-sentence.</strong> Read a phrase, choose where you'll breathe next (usually at commas and periods), then breathe there. If a sentence is long, take a mid-sentence breath at a comma — that's what commas are for.</li>
+<li>If you find yourself running out of air, your mic is probably too far or you're speaking too loudly. Close in an inch and drop your volume.</li>
+</ul>
+<h2 id="mouth-noises-the-small-enemy">Mouth noises: the small enemy</h2>
+<p>Dry lips and a dry mouth make clicks and smacks — the most annoying thing about unedited amateur audio. Your pre-session ritual:</p>
+<ol>
+<li><strong>Room-temperature water</strong>, sipped often. Never ice, never dairy right before recording.</li>
+<li><strong>A green apple</strong> (seriously): the bite and acid neutralize sticky mouth sound better than anything. One apple covers about 90 minutes.</li>
+<li>No coffee in the last 20 minutes if you're prone to clicks (for some people it helps instead — experiment once and remember your result).</li>
+<li>A <strong>gentle pre-reading lip/tongue stretch</strong>, and one soft hum to warm the voice. Two minutes, tops.</li>
+</ol>
+<p>These little things carry <em>enormous</em> weight over a full book.</p>
+<h2 id="voice-hygiene-honestly">Voice hygiene, honestly</h2>
+<p>Your voice will tire differently than normal conversation does. Helpful, not-iconic advice:</p>
+<ul>
+<li><strong>90 minutes is roughly a session.</strong> After that your voice tires in ways you won't hear until editing — and tired voice makes you push, which sounds strained. Take a real break, or stop for the day.</li>
+<li><strong>Never "push through" soreness.</strong> A hoarse voice in your audiobook is a permanently hoarse audiobook. Cancel the session, drink water, come back tomorrow. Your deadline is yours.</li>
+<li>If your voice cracks, <strong>do note the timestamp and keep reading</strong>. Editing (Chapter 5) handles pick-ups easily. Don't restart a chapter for one crack unless it's dramatic — that's how a whole afternoon disappears.</li>
+</ul>
+<h2 id="stumbles-how-to-handle-them-live">Stumbles: how to handle them live</h2>
+<p>You will flub words. Here is the cheap, pro move used by every voice actor:</p>
+<p><strong>On any flub: pause for one full second, then back up to the start of the <em>phrase</em> (not just the single word) and re-read it cleanly, then continue normally.</strong></p>
+<p>Because every flub is bracketed by clear pauses, you (or an editor — even a free one you hire per-chapter) can find and fix them like turning pages. One-second pause, re-read, continue. Nothing more exiting.</p>
+<p>Do <strong>not</strong> say "sorry" or sigh dramatically or make a remark — the editor-you has to cut all that later for no gain.</p>
+<h2 id="pacing-and-energy-across-a-whole-book">Pacing and energy across a whole book</h2>
+<p>Over a novel-length recording, two things quietly drift without you noticing:</p>
+<ul>
+<li><strong>Pacing:</strong> by chapter 9 you'll be reading 15% faster than chapter 1. Fix: listen to 30 seconds of your first chapter <em>before every session</em> to recalibrate your ear.</li>
+<li><strong>Energy:</strong> the "reading glasses voice" creeps in after an hour. Fix: the one-friend rule; remind yourself who they are between chapters.</li>
+</ul>
+<p>For non-fiction: give lists and steps a tiny <strong>upward inflection</strong> on the sentence-leading words so the listener hears structure coming, not just a wall of sentences.</p>
+<p>For fiction: <strong>don't over-act dialogue.</strong> Two characters flirting barely needs two "voices"; it needs two <em>senses of rhythm</em>. The cheapest trick: <strong>tilt your head slightly or change your sitting posture for a new speaker.</strong> That tiny physical change tends to shift your voice naturally — no "voice acting" required.</p>
+<h2 id="handling-your-text-on-the-desk">Handling your text on the desk</h2>
+<ul>
+<li>Print the manuscript, one chapter at a time, with 1.5-inch margins and 13–14 pt font for notes. Paper doesn't scroll, buzz, or glow.</li>
+<li><strong>Read a chapter once aloud (silently, in your head) before recording it.</strong> Ten minutes of pre-reading kills 90% of flubs.</li>
+<li>Pencil in emphasis: circle words you must punch, arrows where tone rises/falls, <strong>double-underlines for anything with unusual pronunciation</strong> (names, jargon) and write your chosen pronunciation right there.</li>
+<li>Keep a "replaceable words" sticky list of names/terms you often flub, so you'll see it before recording a new chapter.</li>
+</ul>
+<h2 id="the-last-mile-fatigue-selfdoubt-momentum">The last mile: fatigue, self-doubt, momentum</h2>
+<p>Two honest feelings to expect, and what to do with them:</p>
+<ul>
+<li><strong>"Do I sound like me?"</strong> Yes; you're hearing your own voice through a different channel for the first time at high resolution — nobody else hears you the way you do, and this strangeness fades in a week of sessions. Do not re-record entire chapters because of it.</li>
+<li><strong>"This will take forever."</strong> It will take <em>hours</em>, not forever — about three to six recorded hours per finished hour for a beginner, dropping fast. A 60,000-word book is around 7 finished hours; most authors finish in a few weeks of casual evening sessions.</li>
+</ul>
+<p>You will improve noticeably by chapter three, and nobody listening to the final book will know which chapters came first. Keep recording.</p><nav class='pagers'><a href="03-acx-specs.html">&larr; ACX-Style Specs in Plain Numbers</a><a href="05-chapter-workflow.html">The Chapter-by-Chapter Workflow &rarr;</a></nav>
+<footer class="site">
+<p>04-reading-tips.md · 939 words · about 4 min to read</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC · <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a> · MIT licensed. Written plain, warm, and checked like you would if a friend asked you to test it.</p>
+</footer>
+</div>
+</body>
+</html>

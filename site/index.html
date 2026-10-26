@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home — The Audiobook Recording Handbook</title>
+<meta name="description" content="A warm, plain-English handbook for recording your own audiobook at home: bedroom acoustics, free Audacity setup, store specs in plain numbers, reading tips for non-voice-actors, a chapter-by-chapter workflow, and honest narration options.">
+<style>
+:root {
+  --ink: #23201a;
+  --paper: #fdfbf7;
+  --accent: #7c3f2d;
+  --accent-soft: #f3e6df;
+  --line: #e4dcd2;
+  --muted: #6f675c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 18px;
+}
+.wrap { max-width: 46em; margin: 0 auto; padding: 1.2rem 1.2rem 4rem; }
+header.site {
+  border-bottom: 3px double var(--line);
+  padding: 1.3rem 0 1rem;
+  margin-bottom: 1rem;
+}
+header.site h1 { margin: 0 0 .2rem; font-size: 1.45rem; }
+header.site h1 a { color: var(--accent); text-decoration: none; }
+header.site p.tag { margin: 0; color: var(--muted); font-style: italic; }
+nav.toc {
+  background: var(--accent-soft);
+  border-radius: 8px;
+  padding: .9rem 1.1rem;
+  margin: 1.3rem 0 1.8rem;
+  font-size: .95rem;
+}
+nav.toc ol { margin: .2rem 0 .2rem 1.2rem; padding: 0; }
+nav.toc li { margin: .15rem 0; }
+nav.toc a { color: var(--ink); text-decoration: none; }
+nav.toc a:hover { text-decoration: underline; }
+nav.pagers {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 2.4rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  font-size: .95rem;
+}
+nav.pagers a { color: var(--accent); text-decoration: none; font-weight: bold; }
+nav.pagers a:hover { text-decoration: underline; }
+h2 { border-bottom: 1px solid var(--line); padding-bottom: .25rem; }
+h3 { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1.1rem 0; font-size: .92em; }
+th, td { border: 1px solid var(--line); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+code {
+  background: var(--accent-soft);
+  padding: .05em .35em;
+  border-radius: 4px;
+  font-size: .9em;
+  font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+}
+pre {
+  background: #2d2a24;
+  color: #f6f1e7;
+  padding: .9rem 1.1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.45;
+  font-size: .9em;
+}
+pre code { background: none; color: inherit; padding: 0; }
+blockquote {
+  margin: 1.2rem 0;
+  padding: .2rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 8px 8px 0;
+}
+ul, ol, p { margin: .8rem 0; }
+li { margin: .3rem 0; }
+footer.site {
+  margin-top: 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .85rem;
+}
+.meta { color: var(--muted); font-size: .85rem; margin: -.3rem 0 1.4rem; }
+input[type="checkbox"] { accent-color: var(--accent); }
+@media (max-width: 700px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1><a href="index.html">The Audiobook Recording Handbook</a></h1>
+<p class="tag">Record your own audiobook at home — blankets beat gear</p>
+</header>
+<nav class='toc'><p><strong>What's inside</strong></p><ol><li><a href="00-intro.html">Introduction: Your Audiobook, Made at Home</a></li><li><a href="01-bedroom-basics.html">Bedroom Recording Basics: Blankets Beat Gear</a></li><li><a href="02-free-audacity-setup.html">Free Audacity Setup: Five Minutes, No Money, No Tears</a></li><li><a href="03-acx-specs.html">ACX-Style Specs in Plain Numbers</a></li><li><a href="04-reading-tips.html">Reading Tips for Non-Voice-Actors</a></li><li><a href="05-chapter-workflow.html">The Chapter-by-Chapter Workflow</a></li><li><a href="06-narration-options.html">Your Three Narration Routes: DIY, Hire, or AI</a></li><li><a href="07-listening-and-publishing.html">Listening, Distributing, and After You Finish</a></li><li><a href="08-checklists.html">Checklists</a></li><li><a href="09-glossary.html">Glossary</a></li></ol></nav><p>Welcome! If you've published a book — or you're about to — you've probably noticed that audiobooks are the fastest-growing corner of publishing. Maybe you've looked into it before and hit a wall that looked like this:</p>
+<ul>
+<li>"You need a studio, a condenser mic, and treated walls."</li>
+<li>"You need to hire a narrator, and it costs $2,000 per finished hour."</li>
+<li>"You need pro audio skills. This is not for beginners."</li>
+</ul>
+<p>Here's the truth this handbook is built on: <strong>none of those walls are real.</strong> People record publishable, sellable audiobooks in bedrooms every single day. The recording industry's oldest secret is that a hung blanket beats a five hundred dollar accessory every time, and this handbook will show you exactly how to put that secret to work.</p>
+<h2 id="who-this-is-for">Who this is for</h2>
+<p>This handbook is for authors who want to turn their own book into an audiobook — without a studio, without deep pockets, and without feeling like they need to retrain as a sound engineer first.</p>
+<p>You do <strong>not</strong> need any of the following:</p>
+<ul>
+<li>Voice acting experience</li>
+<li>Perfect recording acoustics</li>
+<li>Expensive gear</li>
+<li>Prior audio editing experience</li>
+</ul>
+<p>You <strong>do</strong> need:</p>
+<ul>
+<li>A finished (or nearly finished) manuscript</li>
+<li>3 to 6 hours of quiet time per finished hour of audio</li>
+<li>A little patience with technology</li>
+<li>Willingness to record a few "bad takes" on the way to good ones</li>
+</ul>
+<h2 id="whats-inside">What's inside</h2>
+<p>The handbook walks you through six things, in order:</p>
+<ol>
+<li><strong>Bedroom recording basics</strong> — how to make your room quiet enough with stuff you already own, like blankets and spare pillows (blankets beat gear).</li>
+<li><strong>Free Audacity setup</strong> — a free, walk-through-level configuration so your recordings start publish-ready instead of "fixable".</li>
+<li><strong>ACX-style specs in plain numbers</strong> — exactly what your audio must look like on its way out, with no jargon left untranslated.</li>
+<li><strong>Reading tips for non-voice-actors</strong> — how to sound like a person, not a haunted answering machine.</li>
+<li><strong>A chapter-by-chapter workflow</strong> — record, edit, master, export, repeat; one chapter at a time so you never drown.</li>
+<li><strong>Your three narration routes</strong> — record it yourself, hire a narrator, or use free AI narration — with honest limits for each.</li>
+</ol>
+<p>At the end you'll find <strong>checklists</strong> you can print and keep at your recording desk, and a <strong>glossary</strong> that translates every audio term used here into plain English.</p>
+<h2 id="how-to-use-this-handbook">How to use this handbook</h2>
+<ul>
+<li>Read Chapter 1 (bedroom basics) and Chapter 2 (Audacity setup) before you touch a mic. That's your setup day.</li>
+<li>Chapter 3 (specs) is worth reading early even if you feel like skimming it — knowing the finish line changes how you run the race.</li>
+<li>Chapter 5 (workflow) is your day-to-day playbook once you start recording.</li>
+<li>Use the checklists during every session. They exist because at minute 40 of recording, nobody's memory is trustworthy.</li>
+</ul>
+<h2 id="a-note-on-tone">A note on tone</h2>
+<p>You will never be talked down to in this handbook. Every term gets defined the first time it appears (and lives in the glossary too). Every step is included on purpose. If something is genuinely hard, I'll say so and give you a workaround instead of pretending otherwise.</p>
+<p>This handbook is part of a small family of author education guides. It pairs nicely with our publishing guide (<em>Publishing Beyond KDP</em>), which covers wide distribution, and it assumes nothing about which store you'll sell in — the specs in Chapter 3 are written so your files pass the strictest common standard (Amazon/Audible's), which makes everywhere else easy.</p>
+<p>Let's make your audiobook. First stop: your bedroom, reimagined as a recording booth.</p>
+<footer class="site">
+<p>Built 2026-10-26</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC · <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a> · MIT licensed. Written plain, warm, and checked like you would if a friend asked you to test it.</p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACX-Style Specs in Plain Numbers — The Audiobook Recording Handbook</title>
+<meta name="description" content="A warm, plain-English handbook for recording your own audiobook at home: bedroom acoustics, free Audacity setup, store specs in plain numbers, reading tips for non-voice-actors, a chapter-by-chapter workflow, and honest narration options.">
+<style>
+:root {
+  --ink: #23201a;
+  --paper: #fdfbf7;
+  --accent: #7c3f2d;
+  --accent-soft: #f3e6df;
+  --line: #e4dcd2;
+  --muted: #6f675c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 18px;
+}
+.wrap { max-width: 46em; margin: 0 auto; padding: 1.2rem 1.2rem 4rem; }
+header.site {
+  border-bottom: 3px double var(--line);
+  padding: 1.3rem 0 1rem;
+  margin-bottom: 1rem;
+}
+header.site h1 { margin: 0 0 .2rem; font-size: 1.45rem; }
+header.site h1 a { color: var(--accent); text-decoration: none; }
+header.site p.tag { margin: 0; color: var(--muted); font-style: italic; }
+nav.toc {
+  background: var(--accent-soft);
+  border-radius: 8px;
+  padding: .9rem 1.1rem;
+  margin: 1.3rem 0 1.8rem;
+  font-size: .95rem;
+}
+nav.toc ol { margin: .2rem 0 .2rem 1.2rem; padding: 0; }
+nav.toc li { margin: .15rem 0; }
+nav.toc a { color: var(--ink); text-decoration: none; }
+nav.toc a:hover { text-decoration: underline; }
+nav.pagers {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 2.4rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  font-size: .95rem;
+}
+nav.pagers a { color: var(--accent); text-decoration: none; font-weight: bold; }
+nav.pagers a:hover { text-decoration: underline; }
+h2 { border-bottom: 1px solid var(--line); padding-bottom: .25rem; }
+h3 { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1.1rem 0; font-size: .92em; }
+th, td { border: 1px solid var(--line); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+code {
+  background: var(--accent-soft);
+  padding: .05em .35em;
+  border-radius: 4px;
+  font-size: .9em;
+  font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+}
+pre {
+  background: #2d2a24;
+  color: #f6f1e7;
+  padding: .9rem 1.1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.45;
+  font-size: .9em;
+}
+pre code { background: none; color: inherit; padding: 0; }
+blockquote {
+  margin: 1.2rem 0;
+  padding: .2rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 8px 8px 0;
+}
+ul, ol, p { margin: .8rem 0; }
+li { margin: .3rem 0; }
+footer.site {
+  margin-top: 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .85rem;
+}
+.meta { color: var(--muted); font-size: .85rem; margin: -.3rem 0 1.4rem; }
+input[type="checkbox"] { accent-color: var(--accent); }
+@media (max-width: 700px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1><a href="index.html">The Audiobook Recording Handbook</a></h1>
+<p class="tag">Record your own audiobook at home — blankets beat gear</p>
+</header>
+<p class='meta'>03-acx-specs.md · 1,223 words · about 6 min to read</p><nav class='toc'><p><strong>In this handbook</strong></p><ol><li><a href="00-intro.html">Introduction: Your Audiobook, Made at Home</a></li><li><a href="01-bedroom-basics.html">Bedroom Recording Basics: Blankets Beat Gear</a></li><li><a href="02-free-audacity-setup.html">Free Audacity Setup: Five Minutes, No Money, No Tears</a></li><li><strong>ACX-Style Specs in Plain Numbers</strong></li><li><a href="04-reading-tips.html">Reading Tips for Non-Voice-Actors</a></li><li><a href="05-chapter-workflow.html">The Chapter-by-Chapter Workflow</a></li><li><a href="06-narration-options.html">Your Three Narration Routes: DIY, Hire, or AI</a></li><li><a href="07-listening-and-publishing.html">Listening, Distributing, and After You Finish</a></li><li><a href="08-checklists.html">Checklists</a></li><li><a href="09-glossary.html">Glossary</a></li></ol></nav><h1 id="acxstyle-specs-in-plain-numbers">ACX-Style Specs in Plain Numbers</h1>
+<p>When you upload an audiobook to Amazon, Audible, or ACX (Amazon's audiobook program), their checker measures your audio against a spec sheet. This chapter translates every line of that spec sheet into plain numbers and plain English.</p>
+<p><strong>Why copy the strictest spec?</strong> Because Amazon/Audible is the strictest of the big stores. If your files pass here, they pass nearly everywhere else. (Apple, Spotify, Findaway, and the rest are the same or slightly looser.)</p>
+<h2 id="the-full-spec-translated">The full spec, translated</h2>
+<table>
+<thead><tr>
+<th>Spec line</th>
+<th>Plain number</th>
+<th>What to do</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Format</td>
+<td>MP3, 192 kbps <strong>or higher</strong>, constant bit rate, mono</td>
+<td>Export mono, then convert; this is the last step</td>
+</tr>
+<tr>
+<td>Sample rate</td>
+<td><strong>44100 Hz</strong> (44.1 kHz)</td>
+<td>Set in Audacity project rate; keep it everywhere</td>
+</tr>
+<tr>
+<td>Peak level</td>
+<td><strong>-3 dB or lower</strong>, never higher</td>
+<td>Peak normalization after mastering</td>
+</tr>
+<tr>
+<td>RMS loudness</td>
+<td><strong>-23 dB to -18 dB</strong> (Audible standard)</td>
+<td>The mastering "Loudness" step</td>
+</tr>
+<tr>
+<td>Noise floor</td>
+<td><strong>-60 dB RMS or lower</strong></td>
+<td>Fixed by your room (Chapter 1), mostly</td>
+</tr>
+<tr>
+<td>Room tone</td>
+<td><strong>1–5 seconds</strong> at the start of every file (and ~1 second at the end)</td>
+<td>Copy-paste from your noise profile</td>
+</tr>
+<tr>
+<td>Max file length</td>
+<td><strong>120 minutes</strong> or less per file</td>
+<td>A "chapter" file (rarely). Split if needed</td>
+</tr>
+<tr>
+<td>Credits</td>
+<td>Opening: book title + chapter; Closing: read narration ending</td>
+<td>Optional at some stores, required at ACX</td>
+</tr>
+<tr>
+<td>Chapters as files</td>
+<td>One file per chapter (or roughly)</td>
+<td>Chapter 5 outlines filenames</td>
+</tr>
+</tbody></table>
+<blockquote><p><strong>Important:</strong> Stores tweak specs occasionally, and distribution programs keep evolving (for example, Audible tightened how open ACX is to third parties in recent years, and Spotify's audiobook programs are still changing shape as of writing). Always check the current published spec sheet at whichever store you plan to upload to before your final export. This handbook teaches you the <em>shape</em> of the spec and one complete, sensible recipe; confirm today's exact numbers at the source.</p></blockquote>
+<h2 id="what-each-number-actually-means">What each number actually means</h2>
+<h3 id="peak-level-3-db">Peak level: -3 dB</h3>
+<p>Every audio file has a loudest instant — the <strong>peak</strong>. Peaks hitting 0 dB ("full scale") start clipping, which sounds like crackle and cannot be un-clipped after export. The spec asks you to leave 3 dB of headroom: imagine a cliff edge; peaks should stop 3 decibels short of the edge.</p>
+<p>In practice: if your loudest shouted moments <em>just barely</em> reach -3 dB, and your quietest spoken words are around -20 to -30 dB, you're set.</p>
+<h3 id="rms-loudness-23-to-18-db">RMS loudness: -23 to -18 dB</h3>
+<p>Where peak is the <em>draw of the highest wave</em> — one instant — <strong>RMS</strong> is roughly "average loudness of the spoken words". Think of it as the level of your <em>steady talking voice</em>, not your loudest yell.</p>
+<ul>
+<li>-18 dB RMS: the loud end (energetic, close-mic'd audio)</li>
+<li>-23 dB RMS: the quiet end (the minimum most stores accept)</li>
+</ul>
+<p>If your narration sounds good at conversational volume through headphones, you're probably in the zone. Audacity measures RMS for you (see below) so you don't have to guess.</p>
+<h3 id="noise-floor-60-db-or-lower">Noise floor: -60 dB or lower</h3>
+<p>The <strong>noise floor</strong> is the constant background level — your room's hum, your mic's self-noise, your pairing of computer-fan and breath. At -60 dB it's essentially inaudible under narration, and it's the level pro studios actually achieve with expensive gear.</p>
+<p>If Chapter 1's blanket booth is in place and the noise audit is done, you should hit -60 dB RMS floor with any decent USB dynamic mic. If you're at -40 or -50, fix the room first — no plugin does this magically.</p>
+<h3 id="room-tone-15-seconds">Room tone: 1–5 seconds</h3>
+<p>Stores want a little silence at the start of every file so their playback and transition systems sound smooth between chapters. <strong>Room tone</strong> means "the sound of your room with nobody in it". In practice:</p>
+<ul>
+<li>Record ~5 seconds of silence at the start of each session (do this <em>before</em> your first read, and keep it).</li>
+<li>In editing, trim each chapter file so it starts with about <strong>3 seconds</strong> of that room tone and ends with about <strong>1 second</strong> of it.</li>
+<li>Copy-paste this room tone from one file into the beginning of a chapter file if you lose it.</li>
+</ul>
+<h3 id="the-44100-hz-number">The 44100 Hz number</h3>
+<p>Audio files store "snapshots" of sound per second — the sample rate. 44100 Hz captures everything a human ear hears on speech and music, and it's the CD standard that every audiobook store asks you for. Set it once in Audacity's bottom right corner (project rate) and never think about it again. Exporting at a different rate is the #1 spec-fail we see, and it's totally avoidable with one dropdown.</p>
+<h2 id="how-to-actually-hit-these-numbers-in-audacity-free-no-plugins">How to actually hit these numbers in Audacity (free, no plugins)</h2>
+<p>For each chapter after editing (Chapter 5 runs these in order):</p>
+<p>Two steps cover the level requirements, in this order:</p>
+<ol>
+<li><strong>Loudness normalization (set the RMS window first):</strong> Select all (Ctrl+A) → Effect → <strong>Loudness Normalization</strong>.</li>
+<ul>
+<li>Select <strong>Perceived loudness (LUFS)</strong> as the mode, and set the target to <strong>-19 LUFS</strong> for mono audiobook delivery. (Single-channel (mono) audio understood this way lands in the required -23 to -18 dB RMS window; -19 LUFS reads out roughly around <strong>-21 dB RMS</strong>, comfortably inside.)</li>
+<li>Leave the other controls as defaults and click OK.</li>
+</ul>
+</ol>
+<ol>
+<li><strong>Peaks to -3 dB (only if needed):</strong> Select all again → Effect → <strong>Amplify</strong>. Audacity pre-fills the "New Peak Amplitude" box with the ceiling value; <strong>type -3.0 into the New Peak Amplitude box</strong> and click OK. Now the loudest instant of the file sits at -3 dB.</li>
+<ul>
+<li>If Amplify is grayed out, your peak is already at or below -3 dB — skip it.</li>
+<li>The modest whole-file shift here pushes your RMS down by the same number of decibels, which almost never knocks a -19 LUFS mono file out of the 5 dB-wide RMS window. If you're one of the rare cases, re-run step 1 and leave a little more mic distance next session.</li>
+</ul>
+</ol>
+<p>Everything else (trim the head/tail, wash the noise floor, export):</p>
+<ol>
+<li><strong>Trim, room tone, check:</strong> Head: ~3 seconds of room tone. Tail: ~1 second. No chopped-off breath.</li>
+</ol>
+<ol>
+<li><strong>Measure, don't hope</strong> (optional but recommended): Select a silent 2-second stretch of room tone and open <strong>Analyze → Plot Spectrum</strong>. For a -60 dB-class noise floor, the lowest curve hugs the bottom of the chart around <strong>-60 dB or below</strong> through the mid frequencies. If you see a floor at -35 or -45 dB, room noise is audible under narration — go back to Chapter 1 and add blankets.</li>
+</ol>
+<ol>
+<li><strong>Export WAV first, MP3 last:</strong></li>
+<ul>
+<li>Working file: <strong>File → Export → Export as WAV</strong>, 44100 Hz, 32-bit float, mono.</li>
+<li>Delivery file: <strong>File → Export → Export as MP3</strong>, Bit Rate Mode = <strong>Constant</strong>, Quality = <strong>192 kbps</strong> (or higher), Channel Mode = <strong>Forced stereo?</strong> No — Force mono if the option exists; if you recorded in mono the export will be mono anyway. Set 44100 Hz sample rate. Add ID3v2 metadata if asked (see Chapter 5 for naming).</li>
+</ul>
+</ol>
+<blockquote><p><strong>Quick sanity check:</strong> play your exported MP3 in any player at moderate volume on headphones and on speakers. It should sound like a clean, comfortable, evenly-loud voice with silence at both ends. That _feel_, plus the numbers above, is the whole spec.</p></blockquote>
+<h2 id="a-note-about-mastering">A note about "mastering"</h2>
+<p>The word sounds intimidating; in a home audiobook context it means exactly the three steps above: <strong>edit, then set peaks to -3 dB, then set RMS into spec range, then export.</strong> No magic, no mystique. Chapter 5 slots these steps into your per-chapter workflow so it becomes muscle memory by chapter three.</p><nav class='pagers'><a href="02-free-audacity-setup.html">&larr; Free Audacity Setup: Five Minutes, No Money, No Tears</a><a href="04-reading-tips.html">Reading Tips for Non-Voice-Actors &rarr;</a></nav>
+<footer class="site">
+<p>03-acx-specs.md · 1,223 words · about 6 min to read</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC · <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a> · MIT licensed. Written plain, warm, and checked like you would if a friend asked you to test it.</p>
+</footer>
+</div>
+</body>
+</html>

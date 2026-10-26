@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checklists — The Audiobook Recording Handbook</title>
+<meta name="description" content="A warm, plain-English handbook for recording your own audiobook at home: bedroom acoustics, free Audacity setup, store specs in plain numbers, reading tips for non-voice-actors, a chapter-by-chapter workflow, and honest narration options.">
+<style>
+:root {
+  --ink: #23201a;
+  --paper: #fdfbf7;
+  --accent: #7c3f2d;
+  --accent-soft: #f3e6df;
+  --line: #e4dcd2;
+  --muted: #6f675c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 18px;
+}
+.wrap { max-width: 46em; margin: 0 auto; padding: 1.2rem 1.2rem 4rem; }
+header.site {
+  border-bottom: 3px double var(--line);
+  padding: 1.3rem 0 1rem;
+  margin-bottom: 1rem;
+}
+header.site h1 { margin: 0 0 .2rem; font-size: 1.45rem; }
+header.site h1 a { color: var(--accent); text-decoration: none; }
+header.site p.tag { margin: 0; color: var(--muted); font-style: italic; }
+nav.toc {
+  background: var(--accent-soft);
+  border-radius: 8px;
+  padding: .9rem 1.1rem;
+  margin: 1.3rem 0 1.8rem;
+  font-size: .95rem;
+}
+nav.toc ol { margin: .2rem 0 .2rem 1.2rem; padding: 0; }
+nav.toc li { margin: .15rem 0; }
+nav.toc a { color: var(--ink); text-decoration: none; }
+nav.toc a:hover { text-decoration: underline; }
+nav.pagers {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 2.4rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  font-size: .95rem;
+}
+nav.pagers a { color: var(--accent); text-decoration: none; font-weight: bold; }
+nav.pagers a:hover { text-decoration: underline; }
+h2 { border-bottom: 1px solid var(--line); padding-bottom: .25rem; }
+h3 { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1.1rem 0; font-size: .92em; }
+th, td { border: 1px solid var(--line); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+code {
+  background: var(--accent-soft);
+  padding: .05em .35em;
+  border-radius: 4px;
+  font-size: .9em;
+  font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+}
+pre {
+  background: #2d2a24;
+  color: #f6f1e7;
+  padding: .9rem 1.1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.45;
+  font-size: .9em;
+}
+pre code { background: none; color: inherit; padding: 0; }
+blockquote {
+  margin: 1.2rem 0;
+  padding: .2rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 8px 8px 0;
+}
+ul, ol, p { margin: .8rem 0; }
+li { margin: .3rem 0; }
+footer.site {
+  margin-top: 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .85rem;
+}
+.meta { color: var(--muted); font-size: .85rem; margin: -.3rem 0 1.4rem; }
+input[type="checkbox"] { accent-color: var(--accent); }
+@media (max-width: 700px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1><a href="index.html">The Audiobook Recording Handbook</a></h1>
+<p class="tag">Record your own audiobook at home — blankets beat gear</p>
+</header>
+<p class='meta'>08-checklists.md · 499 words · about 2 min to read</p><nav class='toc'><p><strong>In this handbook</strong></p><ol><li><a href="00-intro.html">Introduction: Your Audiobook, Made at Home</a></li><li><a href="01-bedroom-basics.html">Bedroom Recording Basics: Blankets Beat Gear</a></li><li><a href="02-free-audacity-setup.html">Free Audacity Setup: Five Minutes, No Money, No Tears</a></li><li><a href="03-acx-specs.html">ACX-Style Specs in Plain Numbers</a></li><li><a href="04-reading-tips.html">Reading Tips for Non-Voice-Actors</a></li><li><a href="05-chapter-workflow.html">The Chapter-by-Chapter Workflow</a></li><li><a href="06-narration-options.html">Your Three Narration Routes: DIY, Hire, or AI</a></li><li><a href="07-listening-and-publishing.html">Listening, Distributing, and After You Finish</a></li><li><strong>Checklists</strong></li><li><a href="09-glossary.html">Glossary</a></li></ol></nav><h1 id="checklists">Checklists</h1>
+<p>Print these. Tape them near your recording desk. They exist because your brain stops helping at minute 40.</p>
+<h2 id="onetime-setup-checklist">One-time setup checklist</h2>
+<ul>
+<li><input type="checkbox" disabled > Recording corner chosen (corner or closet; quiet side of the building)</li>
+<li><input type="checkbox" disabled > Blanket/drapes/towels cover previously-reflected surfaces (behind mic especially)</li>
+<li><input type="checkbox" disabled > Noise audit done (30-second silent listen at full volume helped identify any hums/wows)</li>
+<li><input type="checkbox" disabled > Culprit appliances/off-ending scheduled noted (fridge, AC, fans)</li>
+<li><input type="checkbox" disabled > Mic chosen and positioned 2–4 inches from mouth, slightly off-axis</li>
+<li><input type="checkbox" disabled > Foam windscreen or pop filter on the mic</li>
+<li><input type="checkbox" disabled > Headphones plugged in and set as playback device</li>
+<li><input type="checkbox" disabled > Audacity installed from audacityteam.org</li>
+<li><input type="checkbox" disabled > Audacity input/output devices set (named, not "default")</li>
+<li><input type="checkbox" disabled > Project rate = 44100 Hz, recording quality 32-bit float</li>
+<li><input type="checkbox" disabled > Software playthrough / overdub OFF</li>
+<li><input type="checkbox" disabled > Calibration test recorded: peaks float between the middle lines, never clipping</li>
+<li><input type="checkbox" disabled > Folder structure created (manuscript/, projects/, masters/, deliver/, pickup-notes/)</li>
+<li><input type="checkbox" disabled > LOG.md started</li>
+<li><input type="checkbox" disabled > Story: water, green apple, tissues, throat lozenges on the desk</li>
+</ul>
+<h2 id="perchapter-session-checklist-start">Per-chapter session checklist (start)</h2>
+<ul>
+<li><input type="checkbox" disabled > Chapter pre-read done once, emphasis and pauses marked on paper copy</li>
+<li><input type="checkbox" disabled > Pronunciations for names/terms written directly on the page</li>
+<li><input type="checkbox" disabled > First 30 seconds of the room, full volume: confirm silence before starting</li>
+<li><input type="checkbox" disabled > New Audacity project opened (projects/chXX.aup3), 44100 Hz</li>
+<li><input type="checkbox" disabled > 5 seconds of room tone recorded first ("session tone")</li>
+<li><input type="checkbox" disabled > Session log line started in LOG.md</li>
+<li><input type="checkbox" disabled > Water within arm's reach</li>
+<li><input type="checkbox" disabled > Mic distance checked (2–4 inches) — same as last session</li>
+</ul>
+<h2 id="pertake-checklist-during-recording">Per-take checklist (during recording)</h2>
+<ul>
+<li><input type="checkbox" disabled > Flub → 1-second pause → re-read from start of the phrase → keep going</li>
+<li><input type="checkbox" disabled > No "sorry", no dramatic sighs after takes</li>
+<li><input type="checkbox" disabled > Ctrl+S pressed after every take</li>
+<li><input type="checkbox" disabled > Room tone (2–3 seconds) recorded after a long break/splice point</li>
+<li><input type="checkbox" disabled > Session capped at 90 minutes (voice hygiene) — take a real break after</li>
+</ul>
+<h2 id="perchapter-after-recording-checklist">Per-chapter (after recording) checklist</h2>
+<ul>
+<li><input type="checkbox" disabled > Flubs cut (bridge from flub → end of clean re-read)</li>
+<li><input type="checkbox" disabled > Real silences trimmed below ~1.5 seconds (leave natural breaths)</li>
+<li><input type="checkbox" disabled > Loud late-line breaths trimmed around (word before not clipped)</li>
+<li><input type="checkbox" disabled > Room tone pasted under harsh splices that sound unsupported</li>
+<li><input type="checkbox" disabled > Session-tone strip removed from the chapter head</li>
+<li><input type="checkbox" disabled > Skim-listen at 1x for continuity before moving on</li>
+<li><input type="checkbox" disabled > Peaks amplified/limited to -3 dB max</li>
+<li><input type="checkbox" disabled > Loudness normalized to ~-19 LUFS (target window for mono audiobook)</li>
+<li><input type="checkbox" disabled > 3+ seconds room tone at head</li>
+<li><input type="checkbox" disabled > ~1 second room tone at tail</li>
+<li><input type="checkbox" disabled > WAV exported to masters/chXX-master.wav (44100 Hz, 32-bit float, mono)</li>
+<li><input type="checkbox" disabled > MP3 exported to deliver/ (constant 192 kbps, 44100 Hz, mono, sortable name)</li>
+<li><input type="checkbox" disabled > Project saved (Ctrl+S)</li>
+<li><input type="checkbox" disabled > LOG.md updated with done-line</li>
+</ul>
+<h2 id="delivery-checklist-before-uploading">Delivery checklist (before uploading)</h2>
+<ul>
+<li><input type="checkbox" disabled > Full listener pass done in order at 1x, all chapters</li>
+<li><input type="checkbox" disabled > Cross-session loudness sounds matched</li>
+<li><input type="checkbox" disabled > No chapter starts with trimmed-word-too-fast; ends with room tone</li>
+<li><input type="checkbox" disabled > File names zero-padded and sortable (e.g., 03_Cold_Evidence.mp3)</li>
+<li><input type="checkbox" disabled > Current store spec sheet re-checked at the source (do this right before spread/upload)</li>
+<li><input type="checkbox" disabled > Cover art ready (at least 1600×1600) at required store size</li>
+<li><input type="checkbox" disabled > Narrator field set ("Read by the author" if applicable)</li>
+<li><input type="checkbox" disabled > Master WAVs backed up somewhere off-disk (cloud/external drive)</li>
+</ul>
+<h2 id="pickup-session-checklist-small-fixes">Pickup session checklist (small fixes)</h2>
+<ul>
+<li><input type="checkbox" disabled > Fix <em>only</em> named items from the pickup-notes file</li>
+<li><input type="checkbox" disabled > New phrase recorded in same project, same mic distance</li>
+<li><input type="checkbox" disabled > Re-run master steps on affected chapter only</li>
+<li><input type="checkbox" disabled > Re-export WAV and MP3 (overwrite)</li>
+<li><input type="checkbox" disabled > Listen once to confirm the splice is invisible</li>
+</ul><nav class='pagers'><a href="07-listening-and-publishing.html">&larr; Listening, Distributing, and After You Finish</a><a href="09-glossary.html">Glossary &rarr;</a></nav>
+<footer class="site">
+<p>08-checklists.md · 499 words · about 2 min to read</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC · <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a> · MIT licensed. Written plain, warm, and checked like you would if a friend asked you to test it.</p>
+</footer>
+</div>
+</body>
+</html>

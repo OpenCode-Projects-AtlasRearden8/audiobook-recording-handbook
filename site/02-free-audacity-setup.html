@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Audacity Setup: Five Minutes, No Money, No Tears — The Audiobook Recording Handbook</title>
+<meta name="description" content="A warm, plain-English handbook for recording your own audiobook at home: bedroom acoustics, free Audacity setup, store specs in plain numbers, reading tips for non-voice-actors, a chapter-by-chapter workflow, and honest narration options.">
+<style>
+:root {
+  --ink: #23201a;
+  --paper: #fdfbf7;
+  --accent: #7c3f2d;
+  --accent-soft: #f3e6df;
+  --line: #e4dcd2;
+  --muted: #6f675c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 18px;
+}
+.wrap { max-width: 46em; margin: 0 auto; padding: 1.2rem 1.2rem 4rem; }
+header.site {
+  border-bottom: 3px double var(--line);
+  padding: 1.3rem 0 1rem;
+  margin-bottom: 1rem;
+}
+header.site h1 { margin: 0 0 .2rem; font-size: 1.45rem; }
+header.site h1 a { color: var(--accent); text-decoration: none; }
+header.site p.tag { margin: 0; color: var(--muted); font-style: italic; }
+nav.toc {
+  background: var(--accent-soft);
+  border-radius: 8px;
+  padding: .9rem 1.1rem;
+  margin: 1.3rem 0 1.8rem;
+  font-size: .95rem;
+}
+nav.toc ol { margin: .2rem 0 .2rem 1.2rem; padding: 0; }
+nav.toc li { margin: .15rem 0; }
+nav.toc a { color: var(--ink); text-decoration: none; }
+nav.toc a:hover { text-decoration: underline; }
+nav.pagers {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 2.4rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  font-size: .95rem;
+}
+nav.pagers a { color: var(--accent); text-decoration: none; font-weight: bold; }
+nav.pagers a:hover { text-decoration: underline; }
+h2 { border-bottom: 1px solid var(--line); padding-bottom: .25rem; }
+h3 { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1.1rem 0; font-size: .92em; }
+th, td { border: 1px solid var(--line); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+code {
+  background: var(--accent-soft);
+  padding: .05em .35em;
+  border-radius: 4px;
+  font-size: .9em;
+  font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+}
+pre {
+  background: #2d2a24;
+  color: #f6f1e7;
+  padding: .9rem 1.1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.45;
+  font-size: .9em;
+}
+pre code { background: none; color: inherit; padding: 0; }
+blockquote {
+  margin: 1.2rem 0;
+  padding: .2rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 8px 8px 0;
+}
+ul, ol, p { margin: .8rem 0; }
+li { margin: .3rem 0; }
+footer.site {
+  margin-top: 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .85rem;
+}
+.meta { color: var(--muted); font-size: .85rem; margin: -.3rem 0 1.4rem; }
+input[type="checkbox"] { accent-color: var(--accent); }
+@media (max-width: 700px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1><a href="index.html">The Audiobook Recording Handbook</a></h1>
+<p class="tag">Record your own audiobook at home — blankets beat gear</p>
+</header>
+<p class='meta'>02-free-audacity-setup.md · 756 words · about 3 min to read</p><nav class='toc'><p><strong>In this handbook</strong></p><ol><li><a href="00-intro.html">Introduction: Your Audiobook, Made at Home</a></li><li><a href="01-bedroom-basics.html">Bedroom Recording Basics: Blankets Beat Gear</a></li><li><strong>Free Audacity Setup: Five Minutes, No Money, No Tears</strong></li><li><a href="03-acx-specs.html">ACX-Style Specs in Plain Numbers</a></li><li><a href="04-reading-tips.html">Reading Tips for Non-Voice-Actors</a></li><li><a href="05-chapter-workflow.html">The Chapter-by-Chapter Workflow</a></li><li><a href="06-narration-options.html">Your Three Narration Routes: DIY, Hire, or AI</a></li><li><a href="07-listening-and-publishing.html">Listening, Distributing, and After You Finish</a></li><li><a href="08-checklists.html">Checklists</a></li><li><a href="09-glossary.html">Glossary</a></li></ol></nav><h1 id="free-audacity-setup-five-minutes-no-money-no-tears">Free Audacity Setup: Five Minutes, No Money, No Tears</h1>
+<p>Audacity is free, runs on Windows/Mac/Linux, and has been quietly recording publishable audiobooks for over twenty years. There is no "pro tool" you need instead of it — it's just you, Audacity, and about five minutes of setup.</p>
+<h2 id="getting-audacity">Getting Audacity</h2>
+<ol>
+<li>Go to the official site: <strong>audacityteam.org</strong> (the <code>.org</code> — download only from there).</li>
+<li>Download the installer for your OS and run it.</li>
+<li>First launch: click through the welcome screen; check the Audio Host dropdown (keep it as <strong>MME</strong> on Windows unless something's odd; <strong>Core Audio</strong> on Mac; <strong>ALSA</strong> on Linux).</li>
+</ol>
+<blockquote><p>Look at the version number when you install. Audacity updates add little niceties now and then; any version from the last couple of years is fine for our purposes.</p></blockquote>
+<h2 id="setting-your-devices-one-time">Setting your devices (one time)</h2>
+<p>On the toolbar you'll see two dropdowns next to a microphone icon and a speaker icon:</p>
+<ul>
+<li><strong>Input (microphone):</strong> pick your recording mic. Not "default", not your laptop's built-in mic — the <em>name</em> of your mic.</li>
+<li><strong>Playback (speakers):</strong> your headphones, so you can hear takes without loopback noise.</li>
+</ul>
+<p>Then open <strong>Edit → Preferences → Audio</strong> (Windows/Linux) or <strong>Audacity → Settings → Audio</strong> (Mac):</p>
+<ul>
+<li><strong>Sample rate:</strong> leave at <strong>44100 Hz</strong> for everything. (Chapter 3 will explain why this number is golden.)</li>
+<li><strong>Recording quality:</strong> 32-bit float if offered (it usually is) — it protects you from clipping quietly in the background.</li>
+<li><strong>Playback quality:</strong> defaults are fine.</li>
+</ul>
+<h2 id="turning-off-the-two-settings-that-ruin-audiobooks">Turning off the two settings that ruin audiobooks</h2>
+<p>Two Audacity defaults are actively harmful for this genre. Fix them once:</p>
+<ol>
+<li><strong>Click "Overdub / Software playthrough" OFF</strong> if you see it in Transport settings. Hearing yourself in real time while recording a long narration makes most people stumble. Narration is you <em>reading</em>; monitoring the live feed is for music overdubs, not prose.</li>
+<li><strong>Turn "Sound Activated Recording" OFF</strong> unless you have a specific reason. You want full manual control of starts and stops.</li>
+</ol>
+<h2 id="your-window-layout">Your window layout</h2>
+<p>You'll see four main regions. Quick tour:</p>
+<ul>
+<li><strong>Top toolbar:</strong> transport buttons — record (red), play, stop, pause, skip to start/end. You'll live here.</li>
+<li><strong>Track view:</strong> where your recorded audio shows up as big blue squiggles (waveforms). Multiple takes stack as separate tracks.</li>
+<li><strong>Left of each track:</strong> name, volume, pan, Mute/Solo, and the Track dropdown menu.</li>
+<li><strong>Vertical sliders (top right):</strong> mic gain and speaker volume. Leave <strong>mic gain mostly alone</strong> and control loudness with your voice and mic distance instead (Chapter 1).</li>
+</ul>
+<h2 id="recording-your-calibration-test">Recording your calibration test</h2>
+<p>Before your first real take, do this 2-minute ritual:</p>
+<ol>
+<li>Set your mic distance to about 2–4 inches (5–10 cm), slightly off-axis (see Chapter 1).</li>
+<li>Press Record and read <em>anything out loud for 30 seconds</em> — a paragraph from your book is ideal — starting after a two-second silent runway.</li>
+<li>Press Stop. Look at your waveform.</li>
+<li><strong>Aim for peaks hanging around the middle of the track height</strong>, never touching the top or bottom lines. If you're in the middle now, good. If you're tiny, you can move closer to the mic or raise mic gain <em>a little</em> (you want headroom to stay under -3 dB peaks — Chapter 3 explains).</li>
+<li>Plug in headphones and play it back. You should hear your room as <em>near-silence behind your voice</em>.</li>
+</ol>
+<p>If peaks clip (touch the 0 dB top), lower your voice level to the mic — pull back an inch or reduce mic gain — and retest. It's much easier to quietly amplify soft audio in editing than to fix crackly clipped audio at all.</p>
+<h2 id="saving-and-file-organization">Saving and file organization</h2>
+<p>Audacity's project format (<code>.aup3</code>) stores everything, including your edits. For the workflow in Chapter 5:</p>
+<ul>
+<li>Save an <strong>Audacity project per chapter</strong>: one file in a chapter folder, named like <code>ch07.aup3</code>.</li>
+<li>Record all your takes for that chapter in that one project, then edit and master there before exporting the final WAV.</li>
+<li>Exported WAV/MP3 files are <em>deliverables</em>, not working files; give them their own subfolder.</li>
+</ul>
+<blockquote><p><strong>The one Audacity habit to build today:</strong> press <strong>Ctrl+S</strong> after every take. Audacity has become stable over the years, but a power blink without a save has ruined enough narrator weekends that it deserves this bolded warning.</p></blockquote>
+<h2 id="keyboard-shortcuts-worth-memorizing">Keyboard shortcuts worth memorizing</h2>
+<p>Five keys save you hundreds of hand-moves per chapter:</p>
+<ul>
+<li><strong>Spacebar:</strong> play/stop</li>
+<li><strong>Shift+Space:</strong> play from last cursor position (listen-back)</li>
+<li><strong>Ctrl+Z / Ctrl+Y:</strong> undo/redo</li>
+<li><strong>Ctrl+S:</strong> save (see above)</li>
+<li><strong>X / hold X:</strong> (on a selection) Audacity's "zoom to selection" via View</li>
+</ul>
+<p>That's genuinely all the interface you need. Everything fancier — noise-reduction, compression, EQ, mastering — is covered in Chapter 3 with exact plain-number recipes, and Chapter 5 puts it all in order.</p><nav class='pagers'><a href="01-bedroom-basics.html">&larr; Bedroom Recording Basics: Blankets Beat Gear</a><a href="03-acx-specs.html">ACX-Style Specs in Plain Numbers &rarr;</a></nav>
+<footer class="site">
+<p>02-free-audacity-setup.md · 756 words · about 3 min to read</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC · <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a> · MIT licensed. Written plain, warm, and checked like you would if a friend asked you to test it.</p>
+</footer>
+</div>
+</body>
+</html>

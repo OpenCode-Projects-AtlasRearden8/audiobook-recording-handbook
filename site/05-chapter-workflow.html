@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Chapter-by-Chapter Workflow — The Audiobook Recording Handbook</title>
+<meta name="description" content="A warm, plain-English handbook for recording your own audiobook at home: bedroom acoustics, free Audacity setup, store specs in plain numbers, reading tips for non-voice-actors, a chapter-by-chapter workflow, and honest narration options.">
+<style>
+:root {
+  --ink: #23201a;
+  --paper: #fdfbf7;
+  --accent: #7c3f2d;
+  --accent-soft: #f3e6df;
+  --line: #e4dcd2;
+  --muted: #6f675c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 18px;
+}
+.wrap { max-width: 46em; margin: 0 auto; padding: 1.2rem 1.2rem 4rem; }
+header.site {
+  border-bottom: 3px double var(--line);
+  padding: 1.3rem 0 1rem;
+  margin-bottom: 1rem;
+}
+header.site h1 { margin: 0 0 .2rem; font-size: 1.45rem; }
+header.site h1 a { color: var(--accent); text-decoration: none; }
+header.site p.tag { margin: 0; color: var(--muted); font-style: italic; }
+nav.toc {
+  background: var(--accent-soft);
+  border-radius: 8px;
+  padding: .9rem 1.1rem;
+  margin: 1.3rem 0 1.8rem;
+  font-size: .95rem;
+}
+nav.toc ol { margin: .2rem 0 .2rem 1.2rem; padding: 0; }
+nav.toc li { margin: .15rem 0; }
+nav.toc a { color: var(--ink); text-decoration: none; }
+nav.toc a:hover { text-decoration: underline; }
+nav.pagers {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 2.4rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  font-size: .95rem;
+}
+nav.pagers a { color: var(--accent); text-decoration: none; font-weight: bold; }
+nav.pagers a:hover { text-decoration: underline; }
+h2 { border-bottom: 1px solid var(--line); padding-bottom: .25rem; }
+h3 { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1.1rem 0; font-size: .92em; }
+th, td { border: 1px solid var(--line); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+code {
+  background: var(--accent-soft);
+  padding: .05em .35em;
+  border-radius: 4px;
+  font-size: .9em;
+  font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+}
+pre {
+  background: #2d2a24;
+  color: #f6f1e7;
+  padding: .9rem 1.1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.45;
+  font-size: .9em;
+}
+pre code { background: none; color: inherit; padding: 0; }
+blockquote {
+  margin: 1.2rem 0;
+  padding: .2rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 8px 8px 0;
+}
+ul, ol, p { margin: .8rem 0; }
+li { margin: .3rem 0; }
+footer.site {
+  margin-top: 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .85rem;
+}
+.meta { color: var(--muted); font-size: .85rem; margin: -.3rem 0 1.4rem; }
+input[type="checkbox"] { accent-color: var(--accent); }
+@media (max-width: 700px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1><a href="index.html">The Audiobook Recording Handbook</a></h1>
+<p class="tag">Record your own audiobook at home — blankets beat gear</p>
+</header>
+<p class='meta'>05-chapter-workflow.md · 1,086 words · about 5 min to read</p><nav class='toc'><p><strong>In this handbook</strong></p><ol><li><a href="00-intro.html">Introduction: Your Audiobook, Made at Home</a></li><li><a href="01-bedroom-basics.html">Bedroom Recording Basics: Blankets Beat Gear</a></li><li><a href="02-free-audacity-setup.html">Free Audacity Setup: Five Minutes, No Money, No Tears</a></li><li><a href="03-acx-specs.html">ACX-Style Specs in Plain Numbers</a></li><li><a href="04-reading-tips.html">Reading Tips for Non-Voice-Actors</a></li><li><strong>The Chapter-by-Chapter Workflow</strong></li><li><a href="06-narration-options.html">Your Three Narration Routes: DIY, Hire, or AI</a></li><li><a href="07-listening-and-publishing.html">Listening, Distributing, and After You Finish</a></li><li><a href="08-checklists.html">Checklists</a></li><li><a href="09-glossary.html">Glossary</a></li></ol></nav><h1 id="the-chapterbychapter-workflow">The Chapter-by-Chapter Workflow</h1>
+<p>This chapter is your day-to-day playbook. Once your room is set (Chapter 1) and Audacity is configured (Chapter 2), recording a whole book is just this loop, repeated once per chapter:</p>
+<p><strong>prep → record → self-edit → check against specs → master → export → log and rest</strong></p>
+<p>One chapter at a time, every time. The single biggest cause of abandoned audiobooks is trying to "record the whole book first, edit later". Don't. Per-chapter is faster, better, kinder to your voice, and recoverable.</p>
+<h2 id="the-folder-layout-that-never-fails">The folder layout that never fails</h2>
+<p>Set this up once, before chapter 1:</p>
+<pre><code>my-audiobook/
+├── manuscript/          # one PDF/text per chapter, recorder copy
+│   ├── ch01.pdf
+│   └── ...
+├── projects/            # Audacity working projects (never uploaded)
+│   ├── ch01.aup3
+│   └── ...
+├── masters/             # checked WAV masters (kept as backup)
+│   └── ch01-master.wav
+├── deliver/             # final MP3s ready to upload
+│   └── 01_The_Beginning.mp3
+├── pickup-notes/        # little text files of retakes to grab
+│   └── ch01-notes.txt
+└── LOG.md               # one line per session (see below)</code></pre>
+<p>Naming for delivery files: <strong>zero-padded, plain, sortable</strong>, e.g. <code>03_Cold_Evidence.mp3</code>. No spaces in extensions, no emoji, no version soup. Opening and closing title files (if your store wants them) become <code>00_Opening.mp3</code> and <code>99_Closing.mp3</code>.</p>
+<h2 id="chapter-1-of-a-chapter-prep-10-minutes">Chapter 1 of a chapter: prep (10 minutes)</h2>
+<ol>
+<li><strong>Save the manuscript copy</strong> for this chapter into <code>manuscript/</code> (recorder's copy: bigger font, wide margins, penciled notes allowed).</li>
+<li><strong>Pre-read it once</strong> silently-aloud, marking emphasis, pauses, unknown pronunciations (Chapter 4 technique).</li>
+<li><strong>Check the room</strong>: 30 seconds of silent listening at full volume (headphones) before you start. If anything hums, fix it now, not after two chapters of confusion.</li>
+<li><strong>Water, apple, notes, log line open.</strong> Start the session log line: <code>2026-03-14 19:00 ch07 — session 1</code>.</li>
+</ol>
+<h2 id="record-4590-minutes">Record (45–90 minutes)</h2>
+<ol>
+<li>Open the chapter's <strong>new</strong> Audacity project (<code>projects/ch07.aup3</code>, 44100 Hz project rate).</li>
+<li><strong>Record ~5 seconds of room tone first</strong>: "session tone", silence, nothing. Leave it at the top of the project. (Chapter 3's spec needs this.)</li>
+<li>Read. On a flub: 1-second pause, back to the start of the phrase, re-read, continue. No "sorry". (Chapter 4 explains.)</li>
+<li>Between sections (scene break, chapter break, after any long pause for a stretch): record a <strong>fresh 2–3 seconds of room tone</strong> as a spacer. This doesn't cost anything and gives the editor clean splices.</li>
+<li><strong>Ctrl+S after every take.</strong> Not "at the end of the session" — after every take.</li>
+</ol>
+<p>Session rhythm that works well for most authors:</p>
+<ul>
+<li>Read for 25–30 minutes. Stop, drink water, stand up.</li>
+<li><strong>Skim-listen to 30 seconds of each new section immediately</strong> while it's fresh. You aren't editing yet — just verifying the section is flub-clean and not too quiet on your mic.</li>
+<li>Continue. 90 minutes total is a full session for most voices (Chapter 4: the fatigue rule).</li>
+</ul>
+<h2 id="selfedit-3060-minutes-per-finished-hour">Self-edit (30–60 minutes per finished hour)</h2>
+<p>In the same project, an hour of raw audio usually edits down in <em>less</em> time than it took to record once you get the hang of it:</p>
+<ol>
+<li><strong>Find the mistakes visually first.</strong> Play at normal speed over each section you flagged as you recorded them. Flubs live between your re-read pauses — Audacity's waveform (zoomed in) shows the one-second silences clearly.</li>
+<li><strong>Cutting a flub:</strong> select the flub up to the <em>end of the cleanly re-read phrase</em>; cut (Ctrl+X); done. Leave big natural pauses — they sound honest.</li>
+<li><strong>Trim excess silence</strong> longer than ~1.5 seconds down to that (leaving breath is fine; a 9-second "staring at paragraph" pause is not).</li>
+<li><strong>Mind the breath attack the wrong way:</strong> leave most breaths in! Only remove the harsh, loud, end-of-line ones, and cut <em>around</em> them without clipping the word that came before.</li>
+<li>Room tone maintenance: where you cut, keep the sound continuous. Paste-session room tone (from the top of the project) under any splice that sounds "unsupported". Subtle, cheap, invisible.</li>
+<li>Delete the session's first 5 seconds of "session tone" from the top of the chapter body — you'll place its own room tone in the export next.</li>
+</ol>
+<blockquote><p>Later chapters get faster. By chapter 4–5, editing is your evening podcast time with headphones and a slightly slower podcast.</p></blockquote>
+<h2 id="master-then-check-specs-15-minutes">Master, then check specs (15 minutes)</h2>
+<p>Run Chapter 3's recipe, in order, on the whole edited chapter:</p>
+<ol>
+<li>Amplify / peak to <strong>-3 dB max</strong>.</li>
+<li><strong>Loudness normalization</strong> to ~-19 LUFS (subject to the plain-number spec sheet).</li>
+<li><strong>Head/tail:</strong> ~3 seconds room tone at the top, ~1 second at the tail.</li>
+<li>Optional: check noise floor on a selected room-tone stretch (Plot Spectrum at around -60 dB or below).</li>
+</ol>
+<p>If a check that involves "your room noise didn't get fixed" keeps failing, no amount of mastering will save it — improving the blanket booth by one more blanket will.</p>
+<h2 id="export-2-minutes-per-chapter">Export (2 minutes, per chapter)</h2>
+<ol>
+<li><strong>File → Export → Export as WAV</strong> → <code>masters/ch07-master.wav</code> (44100 Hz, 32-bit float if offered, mono).</li>
+<li><strong>File → Export → Export as MP3</strong> → <code>deliver/07_Your_Chapter_Name.mp3</code> (constant bit rate, 192 kbps, 44100 Hz, mono).</li>
+<li><strong>Ctrl+S the project once more</strong>, then close it.</li>
+<li>Update the session log line: <code>2026-03-14 20:15 ch07 — session 1: recorded 41 min, edited, mastered, exported. DONE ✓</code></li>
+</ol>
+<p>That one log line is quietly why you'll finish this audiobook. Momentum you can see beats momentum you can't.</p>
+<h2 id="pickup-sessions-20-minutes">Pick-up sessions (20 minutes)</h2>
+<p>After exporting a chapter, you'll occasionally take a day's break, listen to the MP3 next morning, and hear one phrase that feels <em>off</em> (too rushed, odd emphasis, a syllable flub you missed).</p>
+<ul>
+<li>Open the project, record the replacement phrase right into the timeline (using the same mic distance as that session; the room tone will carry the continuity), edit it in, re-run the master steps, re-export.</li>
+<li>Same filename, overwrite. Done in 20 minutes.</li>
+</ul>
+<p>This is normal, expected, and cheap. It's also the difference between "author-recorded" and "finished".</p>
+<h2 id="momentum-math-why-chapterbychapter-wins">Momentum math (why chapter-by-chapter wins)</h2>
+<p>Per chapter of nonfiction (~5,000 words ≈ 35 minutes of finished audio):</p>
+<table>
+<thead><tr>
+<th>Step</th>
+<th>Beginner</th>
+<th>After 5 chapters</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Prep + pre-read</td>
+<td>15 min</td>
+<td>12 min</td>
+</tr>
+<tr>
+<td>Record</td>
+<td>90 min</td>
+<td>55 min</td>
+</tr>
+<tr>
+<td>Edit</td>
+<td>50 min</td>
+<td>25 min</td>
+</tr>
+<tr>
+<td>Master + export</td>
+<td>20 min</td>
+<td>12 min</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>~3 hours</strong></td>
+<td><strong>~1h 45m</strong></td>
+</tr>
+</tbody></table>
+<p>A whole novel-length book lands around <strong>12–30 hours of work</strong>, spread over as many weeks as you like. A $200-per-finished-hour pro alternative for the same book costs $1,500–$3,000. Every hour of this workflow is worth about $100–$200 to you. It compounds with practice.</p><nav class='pagers'><a href="04-reading-tips.html">&larr; Reading Tips for Non-Voice-Actors</a><a href="06-narration-options.html">Your Three Narration Routes: DIY, Hire, or AI &rarr;</a></nav>
+<footer class="site">
+<p>05-chapter-workflow.md · 1,086 words · about 5 min to read</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC · <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a> · MIT licensed. Written plain, warm, and checked like you would if a friend asked you to test it.</p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glossary — The Audiobook Recording Handbook</title>
+<meta name="description" content="A warm, plain-English handbook for recording your own audiobook at home: bedroom acoustics, free Audacity setup, store specs in plain numbers, reading tips for non-voice-actors, a chapter-by-chapter workflow, and honest narration options.">
+<style>
+:root {
+  --ink: #23201a;
+  --paper: #fdfbf7;
+  --accent: #7c3f2d;
+  --accent-soft: #f3e6df;
+  --line: #e4dcd2;
+  --muted: #6f675c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 18px;
+}
+.wrap { max-width: 46em; margin: 0 auto; padding: 1.2rem 1.2rem 4rem; }
+header.site {
+  border-bottom: 3px double var(--line);
+  padding: 1.3rem 0 1rem;
+  margin-bottom: 1rem;
+}
+header.site h1 { margin: 0 0 .2rem; font-size: 1.45rem; }
+header.site h1 a { color: var(--accent); text-decoration: none; }
+header.site p.tag { margin: 0; color: var(--muted); font-style: italic; }
+nav.toc {
+  background: var(--accent-soft);
+  border-radius: 8px;
+  padding: .9rem 1.1rem;
+  margin: 1.3rem 0 1.8rem;
+  font-size: .95rem;
+}
+nav.toc ol { margin: .2rem 0 .2rem 1.2rem; padding: 0; }
+nav.toc li { margin: .15rem 0; }
+nav.toc a { color: var(--ink); text-decoration: none; }
+nav.toc a:hover { text-decoration: underline; }
+nav.pagers {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 2.4rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+  font-size: .95rem;
+}
+nav.pagers a { color: var(--accent); text-decoration: none; font-weight: bold; }
+nav.pagers a:hover { text-decoration: underline; }
+h2 { border-bottom: 1px solid var(--line); padding-bottom: .25rem; }
+h3 { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; margin: 1.1rem 0; font-size: .92em; }
+th, td { border: 1px solid var(--line); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+code {
+  background: var(--accent-soft);
+  padding: .05em .35em;
+  border-radius: 4px;
+  font-size: .9em;
+  font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+}
+pre {
+  background: #2d2a24;
+  color: #f6f1e7;
+  padding: .9rem 1.1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.45;
+  font-size: .9em;
+}
+pre code { background: none; color: inherit; padding: 0; }
+blockquote {
+  margin: 1.2rem 0;
+  padding: .2rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 8px 8px 0;
+}
+ul, ol, p { margin: .8rem 0; }
+li { margin: .3rem 0; }
+footer.site {
+  margin-top: 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .85rem;
+}
+.meta { color: var(--muted); font-size: .85rem; margin: -.3rem 0 1.4rem; }
+input[type="checkbox"] { accent-color: var(--accent); }
+@media (max-width: 700px) { body { font-size: 16.5px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1><a href="index.html">The Audiobook Recording Handbook</a></h1>
+<p class="tag">Record your own audiobook at home — blankets beat gear</p>
+</header>
+<p class='meta'>09-glossary.md · 841 words · about 4 min to read</p><nav class='toc'><p><strong>In this handbook</strong></p><ol><li><a href="00-intro.html">Introduction: Your Audiobook, Made at Home</a></li><li><a href="01-bedroom-basics.html">Bedroom Recording Basics: Blankets Beat Gear</a></li><li><a href="02-free-audacity-setup.html">Free Audacity Setup: Five Minutes, No Money, No Tears</a></li><li><a href="03-acx-specs.html">ACX-Style Specs in Plain Numbers</a></li><li><a href="04-reading-tips.html">Reading Tips for Non-Voice-Actors</a></li><li><a href="05-chapter-workflow.html">The Chapter-by-Chapter Workflow</a></li><li><a href="06-narration-options.html">Your Three Narration Routes: DIY, Hire, or AI</a></li><li><a href="07-listening-and-publishing.html">Listening, Distributing, and After You Finish</a></li><li><a href="08-checklists.html">Checklists</a></li><li><strong>Glossary</strong></li></ol></nav><h1 id="glossary">Glossary</h1>
+<p>Every technical term used in this handbook, in plain English. If a word here is still confusing in a sentence, that's a handbook bug — tell us.</p>
+<h3 id="acx">ACX</h3>
+<p>Audiobook Creation eXchange — Amazon and Audible's program and platform for producing and distributing audiobooks. Even though stores keep changing, its audio quality checklist is the de-facto "strict bar" that audio engineers and home studios both target.</p>
+<h3 id="amplify">Amplify</h3>
+<p>An Audacity effect that raises or lowers the whole audio by the same number of decibels. Used in mastering to set the file's peak to a target level.</p>
+<h3 id="bit-depth">Bit depth</h3>
+<p>How precisely each audio sample is measured. 32-bit float is generous and protects you from making little mistakes permanent; 16-bit is CD-grade and fine.</p>
+<h3 id="bit-rate-kbps">Bit rate (kbps)</h3>
+<p>How many bits per second an MP3 uses. <strong>Constant 192 kbps (or higher)</strong> is the audiobook spec — lower rates make speech sound swishy and metallic.</p>
+<h3 id="clipping">Clipping</h3>
+<p>What audio sounds like when the level exceeds the digital ceiling: harsh, crackly distortion. Cannot be reliably repaired. Prevented by leaving 3 dB of headroom (peaks below -3 dB).</p>
+<h3 id="constant-bit-rate-cbr">Constant Bit Rate (CBR)</h3>
+<p>MP3 encoding mode where the file uses the same bit rate throughout. The audiobook stores ask for CBR (rather than VBR) because it guarantees the item is measured uniformly for every player-syncing service.</p>
+<h3 id="condenser-mic">Condenser mic</h3>
+<p>A type of microphone that is very sensitive — which in an untreated room means "records the room and its problems." A dynamic mic is usually the right choice for your bedroom chapter booth.</p>
+<h3 id="db-decibel">dB (decibel)</h3>
+<p>The unit audio levels are measured in. 0 dB is the digital ceiling (loud, where clipping happens); quieter levels are negative numbers. A room-quiet recording measuring around -60 dB under speech at -20 dB is 'exactly what you want'.</p>
+<h3 id="dynamic-microphone">Dynamic microphone</h3>
+<p>A mic that hears a narrower "window" of sound than a condenser mic. The right tool for an untreated bedroom: it hears more you, less room.</p>
+<h3 id="early-reflections">Early reflections</h3>
+<p>The first, quick versions of your voice that bounce off nearby walls and arrive at the mic slightly late. They're what makes a bedroom recording sound "boxy." Blankets absorb them.</p>
+<h3 id="finished-hour-pfh">Finished hour (PFH)</h3>
+<p>An hour of final, publishable audio. Narrator prices are quoted "Per Finished Hour" (PFH). Your 90,000-word book is about a finished hour per 9,000 words — so a typical fiction book is roughly 7–10 finished hours.</p>
+<h3 id="headroom">Headroom</h3>
+<p>The unused space between your loudest peak and the digital ceiling. You want exactly 3 dB of it (-3 dB peak).</p>
+<h3 id="loudness-normalization">Loudness normalization</h3>
+<p>An automatic process that raises/lowers the whole file so its <em>average perceived loudness</em> (measured in LUFS) hits a target. Different from "Amplify", which targets the peak instead.</p>
+<h3 id="lufs">LUFS</h3>
+<p>Loudness Units relative to Full Scale — the way modern audio measures perceived loudness. Audiobook specs are given in RMS decibels (below), and LUFS and RMS line closely. A single ~-19 LUFS mono target lands your file inside the required -18 to -23 dB RMS window.</p>
+<h3 id="mono">Mono</h3>
+<p>One audio channel. All audiobook store specs want mono — a podcaster's "stereo" file actually delivers the same voice on both ears. Set it once in the project.</p>
+<h3 id="mp3">MP3</h3>
+<p>The compressed audio format stores require for delivery. 192 kbps constant mono at 44100 Hz is the standard delivery profile.</p>
+<h3 id="noise-floor">Noise floor</h3>
+<p>The constant background level of a recording when nobody is speaking: your room's hum and the mic's self-noise together. Target: <strong>at or below -60 dB RMS</strong>.</p>
+<h3 id="peak">Peak</h3>
+<p>The single loudest instant in a file, shown as the tallest part of the waveform. The audiobook peak spec: -3 dB, never higher.</p>
+<h3 id="pop-filter-windscreen">Pop filter / windscreen</h3>
+<p>Foam or mesh on the mic that softens "P" and "B" breath bursts. Costs almost nothing, prevents cartoonish pops.</p>
+<h3 id="project-rate-sample-rate">Project rate / Sample rate</h3>
+<p>How many audio "snapshots" per second a file stores. <strong>44100 Hz (44.1 kHz)</strong> is the CD standard and the audiobook spec. Set it in Audacity's project bar bottom-right once.</p>
+<h3 id="reflection">Reflection</h3>
+<p>Sound from your voice bouncing off a hard surface. Reflections are the enemy; blankets are their natural predator.</p>
+<h3 id="reverb">Reverb</h3>
+<p>The smeared tail of reflections in a room, like a bathroom echo, but on a smaller scale. Fully desirable in a concert hall; fully undesirable at 2 a.m. in your recording booth.</p>
+<h3 id="rms">RMS</h3>
+<p>Root Mean Square — the "average loudness" of a passage. The audiobook spec window: <strong>-23 to -18 dB RMS</strong>. Where peak shows the loudest instant, RMS describes how loud the <em>steady voice</em> is.</p>
+<h3 id="room-tone">Room tone</h3>
+<p>The sound of your room while nothing is happening — technically, the same "silence" a listener hears between sentences. Stores want 1–5 seconds at the head and a second at the tail of each file, which also gives your own edits something clean to splice from.</p>
+<h3 id="spec-sheet">Spec sheet</h3>
+<p>The store's written list of technical file requirements. Chapter 3 translates the common one into plain numbers.</p>
+<h3 id="usb-microphone">USB microphone</h3>
+<p>A mic that plugs in directly to your computer. Perfectly publishable for audiobooks at the $50–$120 range, especially dynamic USB models.</p>
+<h3 id="vbr-variable-bit-rate">VBR (variable bit rate)</h3>
+<p>MP3 encoding that shifts bit rate based on the sound. Fine for music, not what audiobook specs ask for — use Constant.</p>
+<h3 id="waveform">Waveform</h3>
+<p>The visual squiggle for your audio in an editor. Taller = louder. Flat = silence (or room tone). Your flub-finding in Chapter 5 lives here.</p><nav class='pagers'><a href="08-checklists.html">&larr; Checklists</a><span></span></nav>
+<footer class="site">
+<p>09-glossary.md · 841 words · about 4 min to read</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC · <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a> · MIT licensed. Written plain, warm, and checked like you would if a friend asked you to test it.</p>
+</footer>
+</div>
+</body>
+</html>
